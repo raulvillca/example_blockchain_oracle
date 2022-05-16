@@ -1,0 +1,13 @@
+import { getTokenAddressBasesToCheckTrades } from 'helpers/tokenMapper'
+
+export const ALPHA_REGISTRY_ADDRESS = '0xA42c0cb0304fC63697F0c3E9C08Fb824d5E96aD3'
+
+export const PANCAKE_ROUTER_ADDRESS = '0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3'
+export const PANCAKE_FACTORY_ADDRESS = '0xB7926C0430Afb07AA7DEfDE6DA862aE0Bde767bc'
+
+export const PROPOSAL_STATUS = {
+  PENDING: 1,
+  LIVE: 2,
+  ENDED: 3,
+  CANCELED: 4,
+}

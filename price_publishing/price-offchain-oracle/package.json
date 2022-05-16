@@ -1,0 +1,51 @@
+{
+  "name": "lobo-jobs",
+  "version": "0.0.1",
+  "description": "jobs for lobo.trade",
+  "main": "src/jobs/updatePrice/index.ts",
+  "scripts": {
+    "ts": "tsc --watch",
+    "stopLoss:dev": "nodemon ./build/index.js stopLoss"
+  },
+  "author": "Andrew Ortiz <werdnajoc@gmail.com>",
+  "license": "MIT",
+  "_moduleAliases": {
+    "domains": "build/domains",
+    "helpers": "build/helpers",
+    "jobs": "build/jobs",
+    "config": "build/config"
+  },
+  "engines": {
+    "node": ">=16.13.0",
+    "npm": ">=8.1.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.178",
+    "@types/node": "^16.11.7",
+    "@types/uuid": "^8.0.0",
+    "@types/uuid-validate": "0.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
+    "eslint": "^8.7.0",
+    "lint-staged": "^10.2.6",
+    "nodemon": "^2.0.4",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ethers": "^5.5.3",
+    "glob": "^7.1.6",
+    "lodash": "^4.17.21",
+    "module-alias": "^2.2.2",
+    "moment": "^2.29.1",
+    "uuid": "^8.1.0",
+    "uuid-validate": "0.0.3"
+  },
+  "lint-staged": {
+    "{src}/**/*.ts": [
+      "prettier --write",
+      "tslint --fix",
+      "git add"
+    ]
+  }
+}
